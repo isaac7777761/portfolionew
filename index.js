@@ -85,3 +85,22 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.querySelector('.navbar ul');
+    
+    mobileMenuBtn.addEventListener('click', function() {
+      navMenu.classList.toggle('show');
+    });
+    
+    // Close menu when clicking on a link
+    document.querySelectorAll('.navbar ul li a').forEach(link => {
+      link.addEventListener('click', function() {
+        navMenu.classList.remove('show');
+      });
+    });
+  });
