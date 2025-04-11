@@ -141,7 +141,7 @@ body {
   background-image: url("portfoliobanner.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,22 +212,41 @@ body {
   transform: scale(1.1);
 }
 
+.button11 {
+  display: inline-block;
+  padding: 8px 16px;       /* Tighter padding */
+  font-size: 0.9rem;
+             /* Lets button shrink to content */
+  width: 120px;        /* Prevents too narrow */
+  text-align: center;      /* Centers text */
+}
+
+  
+  /* Your existing button colors - adjust as needed */
+  background-color: #3498db; 
+  color: white;
+}
+
+
 /* ===== About Section ===== */
 .about-section {
-  padding: 5rem 10%;
+  padding: 30rem 10%;
   background: var(--light);
+  min-height: 0vh;
 }
 
 .about-section h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-top: 4rem;
   background: linear-gradient(to right, var(--primary) 10%, var(--dark) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .about-content {
+  margin-top: 20rem;
+  min-height: 300px;
   display: flex;
   align-items: center;
   gap: 3rem;
@@ -829,7 +848,7 @@ footer {
   }
   
   .hero-section {
-    background-position: 70% center;
+    background-position: 20% center;
     opacity: 0.8;
     padding-top:20px;
     height: auto;
