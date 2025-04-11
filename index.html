@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isaac Thapa | MERN Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=The+Seasons&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="hero-image.jpg" as="image" />
+  </head>
+  <body>
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+      <span class="dark-hidden">🌙</span>
+      <span class="light-hidden">☀️</span>
+    </button>
+
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar">
+        <div class="site-name"><b>Isaac Thapa</b></div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h1>Welcome to My Portfolio</h1>
+        <div class="name-before">
+          <h3>I'm</h3>
+          <span class="bold-name">Isaac Thapa</span>
+        </div>
+        <p>MERN Stack Developer | Computer Science Student</p>
+        <a href="Resume.pdf" class="button1"><b>My Resume</b></a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/whatever107" target="_blank"
+          ><button class="logo-button">
+            <img src="github_image.png" alt="GitHub" class="logo" /></button
+        ></a>
+        <a href="http://codexcite.unaux.com/?i=1" target="_blank"
+          ><button class="logo-button">
+            <img src="wordpress.png" alt="WordPress" class="logo" /></button
+        ></a>
+        <a href="https://t.ly/a2bJl" target="_blank"
+          ><button class="logo-button">
+            <img src="linkedin.png" alt="LinkedIn" class="logo" /></button
+        ></a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <hr class="custom-line" />
+      <div class="about-content">
+        <img src="profile.jpg" alt="Isaac Thapa" class="profile-pic" />
+        <div class="about-text">
+          <p>
+            Proactive Computer Science student with expertise in MERN stack
+            development. I specialize in building responsive, user-centric web
+            applications with clean code and efficient architecture. My passion
+            lies in solving complex problems through technology while
+            maintaining elegant design principles.
+          </p>
+          <p>
+            When I'm not coding, you'll find me contributing to open-source
+            projects, writing technical articles, or exploring new UI design
+            trends.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2>Technical Skills</h2>
+      <hr class="custom-line" />
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skill-bar">
+            <label>React.js</label>
+            <div class="bar-container">
+              <div class="bar" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <label>JavaScript</label>
+            <div class="bar-container">
+              <div class="bar" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <label>HTML/CSS</label>
+            <div class="bar-container">
+              <div class="bar" style="width: 95%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <div class="skill-bar">
+            <label>Node.js</label>
+            <div class="bar-container">
+              <div class="bar" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <label>Express.js</label>
+            <div class="bar-container">
+              <div class="bar" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <label>MongoDB</label>
+            <div class="bar-container">
+              <div class="bar" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools</h3>
+          <div class="skills-tags">
+            <span>Git</span>
+            <span>VS Code</span>
+            <span>Figma</span>
+            <span>Postman</span>
+            <span>Tailwind CSS</span>
+            <span>Jest</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2>Featured Projects</h2>
+      <hr class="custom-line" />
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-image" style="background-image: url('vgp.jpg')">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-info">
+            <h3>Visitor Gate Pass System</h3>
+            <p>
+              Full-stack application for Kristu Jayanti College to manage
+              visitor access with QR code generation and real-time tracking.
+            </p>
+            <div class="tech-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>JWT Auth</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="demo-button">code</a>
+              <a
+                href="https://securitycheck.vercel.app/about"
+                class="project-button"
+                >View site <img src="arrow.png" alt="Arrow" class="button-icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div
+            class="project-image"
+            style="background-image: url('mockups6.png')"
+          >
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-info">
+            <h3>codeXcite Learning Platform</h3>
+            <p>
+              Interactive coding tutorial platform with progress tracking and
+              code execution environment.
+            </p>
+            <div class="tech-tags">
+              <span>wordpress</span>
+              <span>CSS</span>
+              <span>HTML</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="demo-button">code</a>
+              <a href="#" class="project-button"
+                >View site <img src="arrow.png" alt="Arrow" class="button-icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+      <h2>Education & Experience</h2>
+      <hr class="custom-line" />
+      <div class="timeline">
+        <div class="event">
+          <div class="event-date">2022 - 2025 Pursuing</div>
+          <div class="event-content">
+            <h3>BCA Computer Science</h3>
+            <p>Kristu Jayanti College, Bangalore</p>
+            <p>CGPA: 7/10</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-date">Summer 2023</div>
+          <div class="event-content">
+            <h3>MERN Stack Developer Intern</h3>
+            <p>Kristu Jayanti Developer Center</p>
+            <ul>
+              <li>Developed Security Checking Application</li>
+              <li>Implemented RESTful APIs with Node.js</li>
+              <li>Optimized React component performance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Get In Touch</h2>
+      <hr class="custom-line" />
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>
+            <i class="icon email"></i>
+            <a href="mailto:isaacthapa36@gmail.com">isaacthapa36@gmail.com</a>
+          </p>
+          <p><i class="icon phone"></i> +91 8131882991</p>
+          <p><i class="icon location"></i> Bangalore, India</p>
+          <div class="contact-socials">
+            <a href="#" target="_blank"
+              ><img src="github_image.png" alt="GitHub"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="linkedin.png" alt="LinkedIn"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="twitter-logo.png" alt="Twitter"
+            /></a>
+          </div>
+        </div>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/your-form-id"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New portfolio message" />
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="button1">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Isaac Thapa. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms</a>
+        <a href="#home" class="back-to-top">↑ Back to Top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
