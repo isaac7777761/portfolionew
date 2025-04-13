@@ -44,32 +44,18 @@
           <span class="bold-name">Isaac Thapa</span>
         </div>
         <p>MERN Stack Developer | Computer Science Student</p>
-        <a href="Resume.pdf" class="button"><b>My Resume</b></a>
+        <a href="Resume.pdf" class="button" download><b>My Resume</b></a>
       </div>
       <div class="socials">
-        <a
-          href="https://github.com/whatever107"
-          target="_blank"
-          aria-label="GitHub"
-        >
-          <button class="logo-button">
-            <img src="github_image.png" alt="GitHub" class="logo" />
-          </button>
-        </a>
-        <a
-          href="http://codexcite.unaux.com/?i=1"
-          target="_blank"
-          aria-label="WordPress"
-        >
-          <button class="logo-button">
-            <img src="wordpress.png" alt="WordPress" class="logo" />
-          </button>
-        </a>
-        <a href="https://t.ly/a2bJl" target="_blank" aria-label="LinkedIn">
-          <button class="logo-button">
-            <img src="linkedin.png" alt="LinkedIn" class="logo" />
-          </button>
-        </a>
+        <button class="logo-button" onclick="window.open('https://github.com/whatever107', '_blank')" aria-label="GitHub">
+          <img src="github_image.png" alt="GitHub" class="logo" />
+        </button>
+        <button class="logo-button" onclick="window.open('http://codexcite.unaux.com/?i=1', '_blank')" aria-label="WordPress">
+          <img src="wordpress.png" alt="WordPress" class="logo" />
+        </button>
+        <button class="logo-button" onclick="window.open('https://t.ly/a2bJl', '_blank')" aria-label="LinkedIn">
+          <img src="linkedin.png" alt="LinkedIn" class="logo" />
+        </button>
       </div>
     </section>
 
@@ -230,7 +216,9 @@
           <div class="event-content">
             <h3>BCA Computer Science</h3>
             <p>Kristu Jayanti College, Bangalore</p>
-            <p>CGPA: 7/10</p>
+            <ul> 
+            <li>CGPA: 7/10</li>
+          </ul>
           </div>
         </div>
         <div class="event">
@@ -251,16 +239,15 @@
             <h3>MERN Stack Developer Intern</h3>
             <p>Kristu Jayanti Developer Center</p>
             <ul>
-              <li>Developed Security Checking Application</li>
-              <li>Implemented RESTful APIs with Node.js</li>
-              <li>Optimized React component performance</li>
+              <li>Security Checking Application</li>
+
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
