@@ -196,14 +196,16 @@ body {
 }
 
 .button {
-  width:35%;
+  margin-top:10px;
+
+  width:12%;
   display: inline-block;
-  padding: 14px 32px; /* Larger for touch */
-  font-size: 1rem;
+  padding: 12px 30px; /* Larger for touch */
+  font-size: 14px;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  border-radius: 30px; /* More rounded */
+  border-radius: 20px; /* More rounded */
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.65, 0, 0.35, 1);
   position: relative;
@@ -249,16 +251,18 @@ body {
   flex-shrink: 0;
 }
 
-.about-text {
-  flex: 1;
-}
+
 
 .about-text p {
   margin-bottom: 1rem;
   font-size: 1.1rem;
   line-height: 1.8;
 }
-
+.about-content p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
 /* ===== Skills Section ===== */
 .skills-section {
   padding: 5rem 10%;
@@ -888,10 +892,10 @@ footer {
   }
 
   .hero-section {
-    background-position: 200% center;
+    background-position:75% center;
     opacity: 0.8;
     padding-top: 20px;
-    height: auto;
+    height: 750px;
     padding-left: 20px;
     padding-right: 20px;
     align-items: center;
@@ -901,39 +905,12 @@ footer {
   .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: center; /* This centers child elements */
+    align-items: left; /* This centers child elements */
   }
 
 
-  .button {
- 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Size adjustments */
-    padding: 6px 3px; /* Even larger tap target */
-    min-width:45px; /* Minimum width */
-    
-    /* Visual enhancements */
-    font-size: 10px;
-    position: relative;
-    border-radius: 35px;
-    overflow: hidden;
-    box-shadow: 
-      0 6px 20px rgba(249, 168, 37, 0.25),
-      inset 0 1px 1px rgba(255, 255, 255, 0.2);
-    
-    /* Interaction improvements */
-    transition: all 0.2s ease-out;
-  }
 
-  /* Pressed state */
-  .button:active {
-    transform: scale(0.96);
-    box-shadow: 
-      0 3px 10px rgba(249, 168, 37, 0.2),
-      inset 0 1px 1px rgba(0, 0, 0, 0.1);
-  }
+
 
   /* Ripple effect */
   .button::after {
@@ -955,27 +932,44 @@ footer {
   }
 
   .hero-content {
-    align-items: top;
+    margin-top:60px;
+    align-items: center;
   }
 
   .hero-content h1 {
+    margin-top:-300px;
     font-size: 2.8rem;
+    text-align: left;
   }
 
-  .hero-content .name-before {
-    display: flex;
+  .hero-content .name-before h2 {
+    margin-bottom:-05px;
+    text-align: left;
     flex-direction: row;
     align-items: baseline;
     gap: px;
-    margin-bottom: -8px;
     white-space: nowrap;
-    justify-content: center;
+    padding-right:155px;
   }
 
   .hero-content .name-before h3 {
+    right:-200px;
+    text-align: left;
+    margin-bottom:-05px;
     margin: 0;
+
     font-size: 1.2rem;
-    display: inline;
+    
+  }
+  .hero-content p {
+    padding-right:110px;
+    right:-00px;
+    text-align: left;
+    margin-top:0px;
+
+
+    font-size: 1.1rem;
+    
   }
 
   .bold-name {
@@ -988,13 +982,56 @@ footer {
     font-size: 1.1rem;
   }
 
-  .button1 {
-    align-self: center;
+
+  .button {
+    display: flex;               /* Enables flexbox */
+    justify-content: center;     /* Horizontally center content */
+    align-items: center;         /* Vertically center content */
+  
+    margin: 0;
+    margin-right: 262px;
+    padding: 0;
+    width: 120px;
+    height: 40px;
+  
+    font-size: 15px;
+    border-radius: 12px;
+  }
+  
+  
+  .socials {
+    
+    display: flex;
+    gap: 15px;
+    margin-right:200px;
+    margin-top: -30px;
+    margin-bottom: 15px;
+  }
+  
+  .logo-button {
+   
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .logo {
+    
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
   }
 
-  .socials {
-    justify-content: center;
-  }
+.about-section{
+  height:110vh;
+  margin-top:-70px;
+}
+
+.about-content  p{
+  margin-top:-60px;
+  margin-bottom: 40px;
+}
 }
 
 @media (max-width: 576px) {
